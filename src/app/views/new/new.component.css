@@ -1,0 +1,101 @@
+.agregar-editar-section {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-agregar-editar {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+    .form-agregar-editar input[type="text"], .form-agregar-editar input[type="number"], .form-agregar-editar select {
+        border: 0;
+        border-bottom: 1px solid #b5b5b5;
+        font-size: medium;
+        padding: 5px;
+        margin-bottom: 15px;
+        font-family: 'Oswald', sans-serif;
+        word-wrap: break-word;
+    }
+
+    .form-agregar-editar textarea {
+        border: 0;
+        border-bottom: 1px solid #b5b5b5;
+        font-size: medium;
+        margin-bottom: 15px;
+        font-family: 'Oswald', sans-serif;
+    }
+
+
+.form-agregar-editar #imagePreview {
+    width: 100px;
+    height: 100px;
+    border-radius: 15px;
+}
+
+.botones {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+    .botones input[type="submit"] {
+        margin: 0;
+        padding: 5px;
+        border-radius: 15px;
+        font-size: medium;
+        color: white;
+        border: 0;
+        background-color: black;
+        font-family: 'Oswald', sans-serif;
+        margin-right: 10px;
+        width: 20%;
+        cursor: pointer;
+    }
+
+    .botones a {
+        width: 20%;
+    }
+
+        .botones a input[type="button"] {
+            margin: 0;
+            padding: 5px;
+            border-radius: 15px;
+            font-size: medium;
+            color: white;
+            border: 0;
+            background-color: black;
+            font-family: 'Oswald', sans-serif;
+            margin-left: 10px;
+            width: 100%;
+            cursor: pointer;
+        }
+
+
+.agregar-editar-section ul {
+    width: 80%;
+    position: initial;
+    padding: 0;
+}
+
+    .agregar-editar-section ul li {
+        list-style: none;
+        font-size: x-large;
+        padding: 2px;
+        cursor: pointer;
+        margin-bottom: 5px;
+    }
+
+        .agregar-editar-section ul li:hover {
+            background-color: lightgray;
+            border-radius: 5px;
+        }
+
+        .agregar-editar-section ul li span {
+            color: grey;
+        }

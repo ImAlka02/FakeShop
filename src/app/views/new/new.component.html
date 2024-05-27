@@ -1,0 +1,27 @@
+<app-header></app-header>
+
+<section class="agregar-editar-section">
+    <h1>Agregar producto</h1>
+
+    <!--  -->
+
+    <form  class="form-agregar-editar" [formGroup]="createForm" (ngSubmit)="postForm(createForm.value)">
+        <input type="text" placeholder="Title" required formControlName="title" />
+        <input type="number" placeholder="Price" required formControlName="price" />
+        <textarea placeholder="Write a little description..." required formControlName="description"></textarea>
+        <input type="text" placeholder="Image" required formControlName="images" />
+
+
+        
+
+        <div class="botones">
+            <input type="submit" value="Agregar" id="btnAgregar" />
+            <a href="">
+                <input type="button" value="Cancelar" id="btnCancelar" />
+            </a>
+        </div>
+
+
+    </form>
+</section>
+

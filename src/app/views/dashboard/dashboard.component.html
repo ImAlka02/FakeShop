@@ -1,0 +1,27 @@
+<app-header></app-header>
+
+<div class="container">
+    <h3 class="h3">Fake Shop </h3>
+    <input type="button" value="New Product" class="btn btn-primary" (click)="newProduct()">
+    <div class="row">
+        <div class="col-md-3 col-sm-6" *ngFor="let product of products" >
+            <div class="product-grid6">
+                <div class="product-image6">
+                    <a>
+                        <img class="pic-1" [src]="product.images[0]">
+                    </a>
+                </div>
+                <div class="product-content">
+                    <h3 class="title"><a href="#">{{product.title}}</a></h3>
+                    <div class="price">${{product.price}}</div>
+                </div>
+                <ul class="social">
+                    <li><a (click)="editProduct(product.id)" data-tip="Edit product"><fa-icon [icon]="faEdit"></fa-icon></a></li>
+                    <li><a (click)="deleteProduct(product.id)" data-tip="Delete product"><fa-icon [icon]="faTrash"></fa-icon></a></li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+</div>
+

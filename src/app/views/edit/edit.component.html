@@ -1,0 +1,20 @@
+<app-header></app-header>
+
+<section class="agregar-editar-section">
+    <h1>Editar producto</h1>
+
+    <form [formGroup]="editForm" (ngSubmit)="postForm(editForm.value)" class="form-agregar-editar">
+        <input type="text" placeholder="Nombre" required formControlName="title"/>
+        
+        <input type="number" placeholder="Precio" required formControlName="price" />
+        
+        <span id="error" class="error"></span>
+        <div class="botones">
+            <input type="submit" value="Agregar" id="btnAgregar" />
+            <a href="">
+                <input type="button" value="Cancelar" id="btnCancelar" />
+            </a>
+        </div>
+    </form>
+</section>
+<app-footer></app-footer>
